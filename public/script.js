@@ -1,5 +1,4 @@
 const BASE_URL = window.location.origin;
-const PORT = process.env.PORT || 3000;
 // script.js
 async function signUp() {
     const name = document.getElementById('name').value;
