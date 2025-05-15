@@ -1,3 +1,4 @@
+const path = require('path');
 // index.js
 const express = require('express');
 const fs = require('fs');
