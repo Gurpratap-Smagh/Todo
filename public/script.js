@@ -139,6 +139,6 @@ function show(message) {
     setTimeout(() => {
         notification.classList.remove("show");
         notification.classList.add("hidden");
-    }, PORT);
+    }, 3000);
 }
 
