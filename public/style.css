@@ -320,3 +320,78 @@ input:hover {
     transform: translateX(100%); /* Slide out to the right */
     transition: opacity 1.0s, transform 1.0s;
 }
+/* Background 3D Effect */
+#background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('your-image.png'); /* Replace with your sun ray image */
+    background-size: cover;
+    background-position: center;
+    perspective: 1000px; /* Creates 3D perspective */
+    transition: transform 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Login Container */
+#login-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+    max-width: 300px;
+    width: 90%;
+    text-align: center;
+}
+
+#login-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#login-container input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#login-container .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#login-container .link {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#login-container button {
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#login-container button:hover {
+    background-color: #4a0072;
+}
+
+/* Interactive 3D Effect */
+#background-container:hover {
+    transform: scale(1.05);
+}
+
