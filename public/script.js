@@ -125,7 +125,7 @@ async function delete_(task, time)
 }
 function logout() {
     localStorage.removeItem('username');
-    window.location.href = 'i.html'; // Redirect to login page
+    window.location.href = 'index.html'; // Redirect to login page
 }
 // Show Popup Notification
 function show(message) {
