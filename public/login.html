@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive 3D Background</title>
+    <title>Taskify Frontend</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="background-container">
-        <div id="login-container">
-            <h2>log in</h2>
-            <input type="text" id="name" placeholder="name">
-            <input type="password" id="password" placeholder="password">
-            <div class="actions">
-                <span>Got no account? =></span>
-                <a href="signup.html" class="link">sign up</a>
+<body id="body1">
+    <div id="notification" class="hidden"></div>
+    <div id="don">
+        
+        <h3>log in</h1>
+        <div>
+            
+            <input class="tbox" id="name" placeholder="name">
+            
+            <input class="tbox" id ="password" placeholder="password">
+            
+        </div>
+        <div id="text">
+            <div id="ah">
+                <h2 id="toto">Got no account=></h2>
+                <div class="a" id="yo" onclick="window.location.href = 'i.html';">sign up</div>
             </div>
-            <button onclick="login()">Log in</button>
+            <div class="a" id="butt" onclick="login()">Log in</div>
         </div>
     </div>
-
-    <script>
-        // JS to make the 3D effect more interactive
-        document.getElementById("background-container").addEventListener("mousemove", function (e) {
-            const x = (window.innerWidth / 2 - e.pageX) / 25;
-            const y = (window.innerHeight / 2 - e.pageY) / 25;
-            document.getElementById("background-container").style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
-        });
-    </script>
+    <script src="./script.js"></script>    
 </body>
 </html>
