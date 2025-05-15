@@ -1,3 +1,4 @@
+const BASE_URL = window.location.origin;
 // script.js
 async function signUp() {
     const name = document.getElementById('name').value;
@@ -9,7 +10,7 @@ async function signUp() {
         return;
     }
     try{
-        const r = await fetch('http://localhost:3000/signup',{
+        const r = await fetch('${BASE_URL}/signup',{
           method: 'POST',
              headers: {
                   'Content-Type': 'application/json'
@@ -33,7 +34,7 @@ async function login() {
     const name = document.getElementById('name').value;
     const password = document.getElementById('password').value;
     try{
-        const dope=await fetch('http://localhost:3000/login',{
+        const dope=await fetch('${BASE_URL}/login',{
             method:'POST',
             headers:{
                 'Content-Type': 'application/json'
@@ -91,7 +92,7 @@ function add() {
 
 async function duh(task,time){
     const name=localStorage.getItem('username');
-    const r = await fetch('http://localhost:3000/save',{
+    const r = await fetch('${BASE_URL}/save',{
           method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -108,7 +109,7 @@ async function duh(task,time){
 async function delete_(task, time)
 {
     const name=localStorage.getItem('username');
-    const r = await fetch('http://localhost:3000/delete',{
+    const r = await fetch('${BASE_URL}/delete',{
           method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
