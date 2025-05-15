@@ -3,7 +3,7 @@ const express = require('express');
 const fs = require('fs');
 const cors = require('cors');  // Import CORS package
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Enable CORS for all requests
 app.use(cors());
