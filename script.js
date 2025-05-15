@@ -92,7 +92,7 @@ function add() {
 
 async function duh(task,time){
     const name=localStorage.getItem('username');
-    const r = await fetch('${BASE_URL}/save',{
+    const r = await fetch(`${BASE_URL}/save`,{
           method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -109,7 +109,7 @@ async function duh(task,time){
 async function delete_(task, time)
 {
     const name=localStorage.getItem('username');
-    const r = await fetch('${BASE_URL}/delete',{
+    const r = await fetch(`${BASE_URL}/delete`,{
           method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
