@@ -1,4 +1,5 @@
 const BASE_URL = window.location.origin;
+const PORT = process.env.PORT || 3000;
 // script.js
 async function signUp() {
     const name = document.getElementById('name').value;
@@ -138,6 +139,6 @@ function show(message) {
     setTimeout(() => {
         notification.classList.remove("show");
         notification.classList.add("hidden");
-    }, 3000);
+    }, PORT);
 }
 
