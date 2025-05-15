@@ -10,7 +10,7 @@ async function signUp() {
         return;
     }
     try{
-        const r = await fetch('${BASE_URL}/signup',{
+        const r = await fetch(`${BASE_URL}/signup`,{
           method: 'POST',
              headers: {
                   'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ async function login() {
     const name = document.getElementById('name').value;
     const password = document.getElementById('password').value;
     try{
-        const dope=await fetch('${BASE_URL}/login',{
+        const dope=await fetch(`${BASE_URL}/login`,{
             method:'POST',
             headers:{
                 'Content-Type': 'application/json'
