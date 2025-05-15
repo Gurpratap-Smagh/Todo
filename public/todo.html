@@ -42,7 +42,8 @@
             }
 
             try {
-                const response = await fetch(`http://localhost:3000/load?name=${name}`);
+                const response = await fetch(`/load?name=${encodeURIComponent(name)}`);
+
                 const tasks = await response.json();
 
                 if (tasks.length > 0) {
